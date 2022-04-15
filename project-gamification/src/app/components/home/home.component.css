@@ -1,0 +1,10 @@
+.flex-container {
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+
+  display: flex;
+  background-color: rgba(33, 37, 41, 255);
+}
+.letra {
+  color: white;
+}
