@@ -6,9 +6,13 @@ import { AppComponent } from './app.component';
 
 import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
+import { HomeComponent } from './components/home/home.component';
+import { PrivateHomeComponent } from './components/private-home/private-home.component';
+import { AdminComponent } from './components/admin/admin.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, HomeComponent, PrivateHomeComponent, AdminComponent, LoginComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
