@@ -1,10 +1,24 @@
 .flex-container {
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
+  align:"center";
 
   display: flex;
   background-color: rgba(33, 37, 41, 255);
 }
 .letra {
   color: white;
+  line-height: 1.5em;
+  font: oblique bold 120% cursive;
+  align:"center";
+  
+ 
+}
+
+.texto{
+  border: solid rgba(33, 37, 41, 255);
+  border-top-width: 40px;
+  border-left-width: 8px;
+  text-align: center;
+  style:"font-size: 30px";
 }

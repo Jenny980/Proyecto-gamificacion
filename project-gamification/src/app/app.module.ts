@@ -8,11 +8,12 @@ import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
 import { HomeComponent } from './components/home/home.component';
 import { PrivateHomeComponent } from './components/private-home/private-home.component';
-import { AdminComponent } from './components/admin/admin.component';
+
 import { LoginComponent } from './components/login/login.component';
+import { RegistroUserComponent } from './components/registro-user/registro-user.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, PrivateHomeComponent, AdminComponent, LoginComponent],
+  declarations: [AppComponent, HomeComponent, PrivateHomeComponent, LoginComponent, RegistroUserComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
