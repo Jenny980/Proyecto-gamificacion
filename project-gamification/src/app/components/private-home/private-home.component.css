@@ -1,0 +1,36 @@
+
+div{
+	border-radius: 50px;
+}
+.contenedor{
+    height:0px;
+    width: auto;
+    align:"center";
+    display: flex;
+    background-color: rgba(33, 37, 41, 255);
+
+     
+}
+.contenido{
+	height:500px;
+	width:80%;
+	float:left;
+    border: solid #000;
+    margin-top: 30px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.letra {
+  color: rgba(33, 37, 41, 255);;
+  line-height: 1.5em;
+  font: oblique bold 120% cursive;
+  align:"center";
+  
+}
+.texto{
+ 
+  border-top-width: 80px;
+  border-left-width: 8px;
+  text-align: center;
+  font-size: 25px;
+}
