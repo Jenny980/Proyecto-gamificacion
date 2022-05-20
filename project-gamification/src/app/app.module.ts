@@ -12,9 +12,21 @@ import { PrivateHomeComponent } from './components/private-home/private-home.com
 import { LoginComponent } from './components/login/login.component';
 import { RegistroUserComponent } from './components/registro-user/registro-user.component';
 import { UnidadAmarillaComponent } from './components/unidad-amarilla/unidad-amarilla.component';
+import { TiendaComponent } from './components/tienda/tienda.component';
+import { CuestionarioComponent } from './components/cuestionario/cuestionario.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, PrivateHomeComponent, LoginComponent, RegistroUserComponent, UnidadAmarillaComponent],
+  // tslint:disable-next-line:max-line-length
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    PrivateHomeComponent,
+    LoginComponent,
+    RegistroUserComponent,
+    UnidadAmarillaComponent,
+    TiendaComponent,
+    CuestionarioComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

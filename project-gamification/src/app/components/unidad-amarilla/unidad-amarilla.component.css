@@ -1,48 +1,59 @@
-
-div{
-	border-radius: 50px;
+div {
+  border-radius: 50px;
 }
-.contenedor{
-    height:0px;
-    width: auto;
-    align:"center";
-    display: flex;
-    background-color: rgba(33, 37, 41, 255);
-
-     
+.contenedor {
+  height: 0px;
+  width: auto;
+  align: "center";
+  display: flex;
+  background-color: rgba(33, 37, 41, 255);
 }
-.contenido{
-	height:500px;
-	width:80%;
-	float:left;
-    border: solid #000;
-    margin-top: 30px;
-    margin-right: 100px;
-    margin-left: 100px;
+.contenido {
+  height: 500px;
+  width: 80%;
+  float: left;
+  border: solid #000;
+  margin-top: 30px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+.contenido1 {
+  height: 500px;
+  width: 80%;
+  float: left;
+  margin-top: 30px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+.letracolor {
+  border-top-width: 80px;
+  border-left-width: 8px;
+  text-align: center;
+  font-size: 25px;
+  color: rgba(255, 255, 0, 0.932);
+  -webkit-text-stroke: 2px rgba(85, 90, 12, 0.411);
 }
 .letra {
   color: rgba(33, 37, 41, 255);
   line-height: 1.5em;
   font: oblique bold 120% cursive;
-  align:"center";
+  align: "center";
   margin-left: 25px;
   margin-right: 25px;
   text-align: center;
-  
 }
 
 .letraa {
-  color: rgba(255, 255, 0, 0.932);;
+  color: rgba(255, 255, 0, 0.932);
   line-height: 1.5em;
   font: oblique bold 120% cursive;
-  align:"center";
+  align: "center";
   margin-left: 25px;
   margin-right: 25px;
   text-align: center;
   -webkit-text-stroke: 1px rgba(33, 37, 41, 255);
 }
-.texto{
- 
+.texto {
   border-top-width: 80px;
   border-left-width: 8px;
   text-align: center;
@@ -68,10 +79,14 @@ h6 {
   margin: 8px 0;
 }
 
-
 .card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 16px;
+}
+
+.letra2 {
+  font: oblique bold 120% cursive;
+  align: "center";
 }

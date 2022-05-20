@@ -4,17 +4,18 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-private-home',
   templateUrl: './private-home.component.html',
-  styleUrls: ['./private-home.component.css']
+  styleUrls: ['./private-home.component.css'],
 })
 export class PrivateHomeComponent implements OnInit {
+  constructor(private router: Router) {}
 
-  constructor(private router: Router) { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
-  }
-
-    navegar = () => {
+  navegar = () => {
     this.router.navigate(['/UnidadAmarilla']);
-  }
+  };
 
+  irTienda = () => {
+    this.router.navigate(['/tienda']);
+  };
 }
