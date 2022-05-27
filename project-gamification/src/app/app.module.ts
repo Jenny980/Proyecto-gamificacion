@@ -14,6 +14,7 @@ import { RegistroUserComponent } from './components/registro-user/registro-user.
 import { UnidadAmarillaComponent } from './components/unidad-amarilla/unidad-amarilla.component';
 import { TiendaComponent } from './components/tienda/tienda.component';
 import { CuestionarioComponent } from './components/cuestionario/cuestionario.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   // tslint:disable-next-line:max-line-length
@@ -31,6 +32,7 @@ import { CuestionarioComponent } from './components/cuestionario/cuestionario.co
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

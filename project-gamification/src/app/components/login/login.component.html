@@ -1,11 +1,23 @@
 <div class="flex-container">
+  <label> Email </label>
+  <input
+    type="email"
+    placeholder="Ingrese su email"
+    [(ngModel)]="usuario.email"
+  />
+  <label> Contraseña </label>
+  <input
+    type="password"
+    placeholder="Ingrese su contraseña"
+    [(ngModel)]="usuario.password"
+  />
   <form class="form-inline my-2 my-lg-0">
     <button
       class="btn btn-outline-success my-2 my-sm-0 letra"
-      (click)="miHome()"
+      (click)="login()"
       type="submit"
     >
-      Iniciar sesión
+      Ingresar
     </button>
   </form>
 </div>
