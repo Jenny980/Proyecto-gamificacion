@@ -8,13 +8,17 @@ import { AuthService } from 'src/app/services/auth.service';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent implements OnInit {
+  uid;
+  datos;
   usuario = {
     email: '',
     password: '',
   };
   constructor(private router: Router, private authService: AuthService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.authService.salir();
+  }
   // tslint:disable-next-line:typedef
 
   miHome = () => {
@@ -23,20 +27,35 @@ export class LoginComponent implements OnInit {
 
   // tslint:disable-next-line:typedef
   login() {
-    console.log(this.usuario);
-    this.authService
-      .login(this.usuario.email, this.usuario.password)
-      .then((res) => {
-        console.log('ingresó:', res);
+    this.authService.login(this.usuario).then((res) => {
+      if (res === null) {
+        alert('Error');
+      } else {
+        this.getUser();
         this.miHome();
-      });
+      }
+    });
   }
 
   // tslint:disable-next-line:typedef
   getUser() {
     this.authService.getUser().subscribe((res) => {
-      console.log(res?.email);
+      this.uid = res?.uid;
+      this.getDatos();
     });
+  }
+
+  // tslint:disable-next-line:typedef
+  getDatos() {
+    this.authService
+      .getDatos(this.uid)
+      .then((res) => {
+        this.datos = res;
+        console.log(this.datos);
+      })
+      .catch((error) => {
+        alert(error);
+      });
   }
 
   // tslint:disable-next-line:typedef

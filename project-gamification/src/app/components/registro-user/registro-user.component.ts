@@ -33,12 +33,17 @@ export class RegistroUserComponent implements OnInit {
 
   // tslint:disable-next-line:typedef
   registrar() {
-    this.authService.register(this.usuario).then((res) => {
-      const uid = res.user.uid;
-      this.usuario.uid = uid;
-      this.db.collection('Users').add(this.usuario);
-      console.log('Se registró a:', res);
-      this.login();
-    });
+    this.authService
+      .register(this.usuario)
+      .then((res) => {
+        const uid = res.user.uid;
+        this.usuario.uid = uid;
+        this.db.collection('Users').add(this.usuario);
+        console.log('Se registró a:', res);
+        this.login();
+      })
+      .catch((error) => {
+        alert(error);
+      });
   }
 }

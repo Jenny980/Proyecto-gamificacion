@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-private-home',
@@ -7,8 +8,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./private-home.component.css'],
 })
 export class PrivateHomeComponent implements OnInit {
-  constructor(private router: Router) {}
-
+  constructor(private router: Router, private authService: AuthService) {}
+  datos;
   ngOnInit(): void {}
 
   navegar = () => {
