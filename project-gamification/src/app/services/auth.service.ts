@@ -5,11 +5,14 @@ import {
   AngularFirestoreCollection,
 } from '@angular/fire/firestore';
 import * as firebase from 'firebase';
+import { BehaviorSubject, Observable, ReplaySubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class AuthService {
+  private mensajero = new BehaviorSubject<any>(1);
+  private mensajero1 = new BehaviorSubject<any>(1);
   constructor(private auth1: AngularFireAuth, private db: AngularFirestore) {}
 
   // tslint:disable-next-line:typedef
@@ -50,6 +53,7 @@ export class AuthService {
 
   // tslint:disable-next-line:typedef
   getDatos(idu) {
+    this.mensajero.next(idu);
     const lectura = this.db.collection('Users').get().toPromise();
     return lectura
       .then((resp) => {
@@ -58,6 +62,7 @@ export class AuthService {
         for (let objeto of document) {
           const dts: any = objeto.data();
           if (idu === dts.uid) {
+            this.mensajero1.next(dts);
             return dts;
           }
         }
@@ -65,5 +70,14 @@ export class AuthService {
       .catch((error) => {
         console.log(error);
       });
+  }
+  // tslint:disable-next-line:typedef
+  public get recibir$(): Observable<string>{
+    return this.mensajero.asObservable();
+  }
+
+  // tslint:disable-next-line:typedef
+  public get recibirr$(): Observable<any>{
+    return this.mensajero1.asObservable();
   }
 }
