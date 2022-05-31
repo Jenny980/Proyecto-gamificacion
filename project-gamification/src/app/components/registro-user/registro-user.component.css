@@ -2,3 +2,48 @@
   font: oblique bold 120% cursive;
   align: "center";
 }
+  
+
+.flex-container {
+  
+  width: 75%;
+  -webkit-border-radius: 1.5em;
+  align:"center";
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  background-color: rgba(33, 37, 41, 255);
+}
+.letra {
+  color: white;
+  line-height: 1.5em;
+  font: oblique bold 120% cursive;
+  align:"center";
+  
+ 
+}
+
+.letrab {
+  color: #157347;
+  line-height: 1.5em;
+  font: oblique bold 120% cursive;
+  align:"center";
+ 
+}
+
+
+.texto{
+
+  border-top-width: 40px;
+  border-left-width: 8px;
+  font-size: 20px;
+  text-align: center;
+  style:"font-size: 30px";
+}
+
+.texto2{
+  border-top-width: 8px;
+  border-left-width: 4rem;
+  border-right-width: 4rem;
+
+}

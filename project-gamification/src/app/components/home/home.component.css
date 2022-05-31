@@ -1,8 +1,9 @@
 .flex-container {
-  -moz-border-radius: 7px;
-  -webkit-border-radius: 7px;
+  width: 85%;
+  -webkit-border-radius: 1.5em;
   align:"center";
-
+  margin-right: auto;
+  margin-left: auto;
   display: flex;
   background-color: rgba(33, 37, 41, 255);
 }
@@ -16,7 +17,6 @@
 }
 
 .texto{
-  border: solid rgba(33, 37, 41, 255);
   border-top-width: 40px;
   border-left-width: 8px;
   text-align: center;

@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
 
   miHome = () => {
     this.router.navigate(['/privateHome']);
-  };
+  }
 
   // tslint:disable-next-line:typedef
   login() {
@@ -61,5 +61,8 @@ export class LoginComponent implements OnInit {
   // tslint:disable-next-line:typedef
   salir() {
     this.authService.salir();
+  }
+  registro = () => {
+    this.router.navigate(['/registroUser']);
   }
 }

@@ -1,40 +1,20 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid "  >
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-toggleable-sm stick-top">
+  
+  <div class="container-fluid container ">
     <a class="navbar-brand titulo " style="font-size: 30px" >KarateArt</a>
     <div>
-      <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <a class="nav-link letra" routerLink="home" routerLinkActive="active">Inicio</a>
+      <div class="navbar-nav mr-auto ml-auto text-center">
+        <div class="navbar-nav mr-auto ml-center text-center">
+          <a class="nav-item nav-link letra" href="home">Inicio</a>
+          <a class="nav-item btn btn-outline-success my-2 my-sm-0 letra" href="login">Iniciar sesión</a>
+        </div>
       </div>
-      <form class="form-inline my-2 my-lg-0">
-        <button
-          class="btn btn-outline-success my-2 my-sm-0 letra"
-          routerLink="login"
-          routerLinkActive="active"
-          type="submit"
-        >
-          Iniciar sesión
-        </button>
-      </form>
     </div>
-
-    </div>
-    
-    
   </div>
-</nav>
 
-<div class="container mt-5">
+</nav>
+<div class="container-fluid mt-5">
   <router-outlet></router-outlet>
 </div>
+

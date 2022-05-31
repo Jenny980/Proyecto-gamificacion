@@ -1,23 +1,50 @@
-<div class="flex-container">
-  <label> Email </label>
-  <input
-    type="email"
-    placeholder="Ingrese su email"
-    [(ngModel)]="usuario.email"
-  />
-  <label> Contraseña </label>
-  <input
-    type="password"
-    placeholder="Ingrese su contraseña"
-    [(ngModel)]="usuario.password"
-  />
-  <form class="form-inline my-2 my-lg-0">
-    <button
-      class="btn btn-outline-success my-2 my-sm-0 letra"
-      (click)="login()"
-      type="submit"
-    >
-      Ingresar
-    </button>
-  </form>
+<div class="flex-container " >
+  <img width="900" src="assets/oo.webp" />
+  <br />
+    
+    <div class="letra texto"  >
+      <br />
+      <br />
+      <h1 class="texto letra">
+        Iniciar sesión en KarateArt
+      </h1>
+      <br />
+      <br />
+      <br />
+      <label class="texto"> Email </label>
+      <br />
+      <input
+        type="email"
+        placeholder="Ingrese su email"
+        [(ngModel)]="usuario.email"
+      />
+      <br />
+      <br />
+      <label class="texto"> Contraseña </label>
+
+      <input
+        type="password"
+        placeholder="Ingrese su contraseña"
+        [(ngModel)]="usuario.password"
+      />
+      <br />
+      <br />
+      <br />
+      <br />
+      <form class="form-inline my-2 my-lg-0">
+      <button
+        class="btn btn-outline-success my-2 my-sm-0 letra"
+        (click)="login()"
+        type="submit"
+      >
+        Iniciar sesión
+      </button>
+      </form>
+      <br />
+      <label class="letrab" type="button" (click)="registro()" >Registrarse</label>
+  
+      
+    </div>
 </div>
+
+

@@ -1,36 +1,66 @@
-<div class="flex-container">
-  <label> Nombre </label>
-  <input
-    type="text"
-    placeholder="Ingrese su nombre"
-    [(ngModel)]="usuario.nombre"
-  />
-  <label> Edad </label>
-  <input
-    type="number"
-    placeholder="Ingrese su edad"
-    [(ngModel)]="usuario.edad"
-  />
-  <label> Email </label>
-  <input
-    type="email"
-    placeholder="Ingrese su email"
-    [(ngModel)]="usuario.email"
-  />
-  <label> Contraseña </label>
-  <input
-    type="password"
-    placeholder="Ingrese su contraseña"
-    [(ngModel)]="usuario.password"
-  />
 
-  <form class="form-inline my-2 my-lg-0">
-    <button
-      class="btn btn-outline-success my-2 my-sm-0 letra"
-      (click)="registrar()"
-      type="submit"
-    >
-      Registrarse
-    </button>
-  </form>
+<div class="flex-container">
+  
+  <img width="500" src="assets/capturaniña.png" />
+  
+  <div class="letra texto"  >
+    <br />
+    <br />
+    <br />
+    <label class="texto letra"> Nombre </label>
+    <br />
+    <div class="container"> 
+    <input
+      id="nombre"
+      type="text"
+      placeholder="Ingrese su nombre"
+      [(ngModel)]="usuario.nombre"
+    />
+    </div>
+    <br />
+    <label class="texto"> Edad </label>
+    <br />
+    <input
+      id="edad"
+      type="number"
+      placeholder="Ingrese su edad"
+      [(ngModel)]="usuario.edad"
+    />
+    <br />
+    <br />
+    <label class="texto" > Email </label>
+    <br />
+    <input
+      id="email"
+      type="email"
+      placeholder="Ingrese su email"
+      [(ngModel)]="usuario.email"
+    />
+    <br />
+    <br />
+    <label class="texto"> Contraseña </label>
+    <br />
+    <input
+      id="pass"
+      type="password"
+      placeholder="Ingrese su contraseña"
+      [(ngModel)]="usuario.password"
+    />
+    <br />
+    <br />
+    <br />
+    <form class="form-inline my-2 my-lg-0">
+      <button
+        class="btn btn-outline-success my-2 my-sm-0 letra"
+        (click)="registrar()"
+        type="submit"
+      >
+        Registrarse
+      </button>
+    </form>
+    <br />
+    <br />
+  </div>
+   <img width="500" src="assets/niñoo.jpg" />
 </div>
+
