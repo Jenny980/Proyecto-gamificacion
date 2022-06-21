@@ -21,7 +21,9 @@
     "@angular/platform-browser-dynamic": "~11.2.14",
     "@angular/router": "~11.2.14",
     "@firebase/auth": "^0.20.2",
+    "@ng-bootstrap/ng-bootstrap": "^5.0.0-rc.0",
     "firebase": "^8.9.1",
+    "ngb-modal": "0.0.4",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.3"

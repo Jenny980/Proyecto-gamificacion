@@ -1,0 +1,59 @@
+div {
+  border-radius: 50px;
+}
+.contenedor {
+  height: 0px;
+  width: auto;
+  align: "center";
+  display: flex;
+  background-color: rgba(33, 37, 41, 255);
+}
+.contenido {
+  height: 1650px;
+  width: 80%;
+  float: left;
+  border: solid #000;
+  margin-top: 0px;
+  margin-bottom: 1em;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+.contenido5 {
+  height: 1700px;
+  width: 80%;
+  float: left;
+  border: solid white;
+  margin-top: 0px;
+  margin-right: 70px;
+  margin-left: 140px;
+}
+.letra {
+  color: rgba(33, 37, 41, 255);
+  line-height: 1.5em;
+  font: oblique bold 120% cursive;
+  align: "center";
+  text-align: center;
+}
+.texto {
+  border-top-width: 80px;
+  border-left-width: 8px;
+  text-align: center;
+  font-size: 25px;
+}
+.letracolor {
+  margin-top: 30px;
+  border-top-width: 80px;
+  border-left-width: 8px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(0, 174, 255);
+  -webkit-text-stroke: 2px rgba(48, 7, 7, 0.411);
+}
+.contenido1 {
+  height: 120px;
+  width: 90%;
+  float: left;
+  border: solid rgba(87, 75, 75, 0.37);
+  margin-right: 100px;
+  margin-left: 50px;
+}
