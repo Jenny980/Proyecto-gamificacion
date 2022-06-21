@@ -16,7 +16,7 @@ div {
   margin-top: 10px;
 }
 .contenido {
-  height: 740px;
+  height: 700px;
   width: 80%;
   float: left;
   border: solid #000;
@@ -112,35 +112,34 @@ div {
   svg#rocket-smoke {
     right: 120px;
     transform: rotate(-5deg);
-  }}
-  .card-container {
-     
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: -20px;
   }
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -20px;
+}
 
-  .contenido5 {
-    height: 800px;
-    width: 80%;
-    float: left;
-    border: solid white;
-    margin-top: 0px;
-    margin-right: 70px;
-    margin-left: 140px;
-  }
+.contenido5 {
+  height: 800px;
+  width: 80%;
+  float: left;
+  border: solid white;
+  margin-top: 0px;
+  margin-right: 70px;
+  margin-left: 140px;
+}
 
-  .contenido6 {
-    height: 120px;
-    width: 90%;
-    float: left;
-    border: solid rgba(87, 75, 75, 0.37);
-    margin-right: 100px;
-    margin-left: 50px;
-  }
-  
-  .contenido7 {
-   
-    margin-top: 50px; 
- }
+.contenido6 {
+  height: 120px;
+  width: 90%;
+  float: left;
+  border: solid rgba(87, 75, 75, 0.37);
+  margin-right: 100px;
+  margin-left: 50px;
+}
+
+.contenido7 {
+  margin-top: 50px;
+}
