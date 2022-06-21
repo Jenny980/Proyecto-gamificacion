@@ -8,12 +8,19 @@ div {
   display: flex;
   background-color: rgba(33, 37, 41, 255);
 }
+.contenedor1 {
+  display: flex;
+  margin-left: 1px;
+  margin-right: 1px;
+  justify-content: right;
+  margin-top: 10px;
+}
 .contenido {
-  height: 500px;
+  height: 740px;
   width: 80%;
   float: left;
   border: solid #000;
-  margin-top: 30px;
+  margin-top: 0px;
   margin-right: 100px;
   margin-left: 100px;
 }
@@ -39,3 +46,101 @@ div {
   color: red;
   -webkit-text-stroke: 2px rgba(48, 7, 7, 0.411);
 }
+
+.circle-link {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  margin: 20px;
+  background-color: rgba(33, 37, 41, 255);
+  border: 1px solid rgba(33, 37, 41, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: 1s ease-out;
+}
+.circle-link:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  opacity: 0.7;
+  -moz-opacity: 0.7;
+  filter: alpha (opacity=70);
+}
+
+.circle-linkk {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+
+  margin: 20px;
+  background-color: rgb(218, 218, 191);
+  border: 1px solid rgb(218, 218, 191);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: 1s ease-out;
+}
+
+.circle-linkk:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  opacity: 0.7;
+  -moz-opacity: 0.7;
+  filter: alpha (opacity=70);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+  .card-container > *:not(.circle-link),
+  .terminal {
+    width: 100%;
+  }
+
+  .card:not(.highlight-card) {
+    height: 16px;
+    margin: 8px 0;
+  }
+
+  .card.highlight-card span {
+    margin-left: 72px;
+  }
+
+  svg#rocket-smoke {
+    right: 120px;
+    transform: rotate(-5deg);
+  }}
+  .card-container {
+     
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -20px;
+  }
+
+  .contenido5 {
+    height: 800px;
+    width: 80%;
+    float: left;
+    border: solid white;
+    margin-top: 0px;
+    margin-right: 70px;
+    margin-left: 140px;
+  }
+
+  .contenido6 {
+    height: 120px;
+    width: 90%;
+    float: left;
+    border: solid rgba(87, 75, 75, 0.37);
+    margin-right: 100px;
+    margin-left: 50px;
+  }
+  
+  .contenido7 {
+   
+    margin-top: 50px; 
+ }
