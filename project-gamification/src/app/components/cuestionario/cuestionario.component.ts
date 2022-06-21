@@ -19,7 +19,7 @@ export class CuestionarioComponent implements OnInit {
   private modalRef;
   @ViewChild('myModal') myModal: ElementRef;
   private respuestasCorrectas = {
-    respuesta1: 'opcion2',
+    respuesta1: 'opcion1',
     respuesta2: 'opcion2',
     respuesta3: 'opcion2',
     respuesta4: 'opcion2',
