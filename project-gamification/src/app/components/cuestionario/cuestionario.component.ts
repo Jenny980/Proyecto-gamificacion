@@ -21,14 +21,14 @@ export class CuestionarioComponent implements OnInit {
   private respuestasCorrectas = {
     respuesta1: 'opcion1',
     respuesta2: 'opcion2',
-    respuesta3: 'opcion2',
+    respuesta3: 'opcion1',
     respuesta4: 'opcion2',
-    respuesta5: 'opcion2',
-    respuesta6: 'opcion2',
-    respuesta7: 'opcion2',
-    respuesta8: 'opcion2',
+    respuesta5: 'opcion1',
+    respuesta6: 'opcion1',
+    respuesta7: 'opcion3',
+    respuesta8: 'opcion3',
     respuesta9: 'opcion2',
-    respuesta10: 'opcion2',
+    respuesta10: 'opcion1',
   };
 
   constructor() {
