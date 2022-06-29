@@ -1,5 +1,6 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import {
   NgbModule,
   NgbModalOptions,
@@ -17,7 +18,7 @@ export class CuestionarioComponent implements OnInit {
   contador = 0;
   displayStyle = 'none';
   private modalRef;
-  @ViewChild('myModal') myModal: ElementRef;
+  @ViewChild('playModal') playModal: ElementRef;
   private respuestasCorrectas = {
     respuesta1: 'opcion1',
     respuesta2: 'opcion2',
@@ -31,7 +32,7 @@ export class CuestionarioComponent implements OnInit {
     respuesta10: 'opcion1',
   };
 
-  constructor() {
+  constructor(private router: Router) {
     this.form = this.createInitialForm();
   }
 
@@ -89,23 +90,23 @@ export class CuestionarioComponent implements OnInit {
   }
 
   // tslint:disable-next-line:typedef
-  public openModal() {
-    console.log('fsfs');
+ public play() {
+    alert('Felicidades! Has ganado 100 EXP');
+    alert('Felicidades! Has ganado 50 Esmeraldas');
+    this.principal();
     const ngbModalOptions: NgbModalOptions = {
       backdrop: 'static',
-      keyboard: false,
+      keyboard: false
     };
-    this.ngModalService.open(this.myModal, ngbModalOptions);
+    this.ngModalService.open(this.playModal, ngbModalOptions);
   }
   // tslint:disable-next-line:typedef
-  closeModal() {}
+  close() {
+    this.ngModalService.dismissAll();
+  }
 
-  // tslint:disable-next-line:typedef
-  openPopup() {
-    this.displayStyle = 'block';
-  }
-  // tslint:disable-next-line:typedef
-  closePopup() {
-    this.displayStyle = 'none';
+
+  principal = () => {
+    this.router.navigate(['/principal']);
   }
 }

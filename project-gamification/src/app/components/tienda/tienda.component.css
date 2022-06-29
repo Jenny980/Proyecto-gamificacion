@@ -37,6 +37,9 @@ div {
   text-align: center;
   font-size: 25px;
 }
+.letra1 {
+  font: oblique bold 120% cursive;
+}
 .letracolor {
   margin-top: 30px;
   border-top-width: 80px;

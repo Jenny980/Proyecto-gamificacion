@@ -9,8 +9,8 @@ div {
   background-color: rgba(33, 37, 41, 255);
 }
 .contenido {
-  height: 500px;
-  width: 80%;
+  height: 450px;
+  width: 40%;
   float: left;
   border: solid #000;
   margin-top: 30px;
@@ -34,6 +34,9 @@ div {
   margin-right: 100px;
   margin-left: 50px;
 }
+.letra1 {
+  font: oblique bold 120% cursive;
+}
 .kk {
   margin-right: 100px;
   margin-left: 100px;
@@ -43,9 +46,6 @@ div {
   line-height: 1.5em;
   font: oblique bold 120% cursive;
   align: "center";
-}
-.letra1 {
-  font: oblique bold 120% cursive;
 }
 .texto {
   border-top-width: 80px;

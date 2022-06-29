@@ -8,6 +8,9 @@ div {
   display: flex;
   background-color: rgba(33, 37, 41, 255);
 }
+.letra1 {
+  font: oblique bold 120% cursive;
+}
 .contenido {
   height: 1650px;
   width: 80%;

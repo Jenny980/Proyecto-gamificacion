@@ -8,18 +8,30 @@ div {
   display: flex;
   background-color: rgba(33, 37, 41, 255);
 }
+.letracolor {
+  margin-top: 30px;
+  border-top-width: 80px;
+  border-left-width: 8px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(38, 0, 255);
+  -webkit-text-stroke: 2px rgba(48, 7, 7, 0.411);
+}
 .contenido {
-  height: 500px;
-  width: 80%;
+  height: 450px;
+  width: 45%;
   float: left;
   border: solid #000;
   margin-top: 30px;
   margin-right: 70px;
-  margin-left: 140px;
+  margin-left: 70px;
+}
+.letra1 {
+  font: oblique bold 120% cursive;
 }
 .contenido2 {
   height: 500px;
-  width: 80%;
+  width: 90%;
   float: left;
   border: solid #000;
   margin-top: 30px;
@@ -34,6 +46,12 @@ div {
   margin-right: 100px;
   margin-left: 50px;
 }
+.letra1 {
+  font: oblique bold 120% cursive;
+}
+.letra2 {
+  font: oblique bold 80% cursive;
+}
 .kk {
   margin-right: 100px;
   margin-left: 100px;
@@ -43,9 +61,6 @@ div {
   line-height: 1.5em;
   font: oblique bold 120% cursive;
   align: "center";
-}
-.letra1 {
-  font: oblique bold 120% cursive;
 }
 .texto {
   border-top-width: 80px;

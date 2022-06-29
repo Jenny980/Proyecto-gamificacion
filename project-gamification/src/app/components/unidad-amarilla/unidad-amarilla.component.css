@@ -1,6 +1,9 @@
 div {
   border-radius: 50px;
 }
+.letra1 {
+  font: oblique bold 120% cursive;
+}
 .contenedor {
   height: 0px;
   width: auto;

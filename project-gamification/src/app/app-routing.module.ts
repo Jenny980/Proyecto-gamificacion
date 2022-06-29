@@ -4,6 +4,8 @@ import { CuestionarioComponent } from './components/cuestionario/cuestionario.co
 
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
+import { PrefinalComponent } from './components/prefinal/prefinal.component';
+import { PrincipalComponent } from './components/principal/principal.component';
 import { PrivateHomeComponent } from './components/private-home/private-home.component';
 import { RegistroUserComponent } from './components/registro-user/registro-user.component';
 import { TiendaComponent } from './components/tienda/tienda.component';
@@ -17,6 +19,8 @@ const routes: Routes = [
   { path: 'UnidadAmarilla', component: UnidadAmarillaComponent },
   { path: 'tienda', component: TiendaComponent },
   { path: 'cuestionario', component: CuestionarioComponent },
+  { path: 'principal', component: PrincipalComponent },
+  { path: 'prefinal', component: PrefinalComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home' },
 ];
 

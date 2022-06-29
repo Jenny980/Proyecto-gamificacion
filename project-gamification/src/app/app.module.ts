@@ -16,6 +16,8 @@ import { TiendaComponent } from './components/tienda/tienda.component';
 import { CuestionarioComponent } from './components/cuestionario/cuestionario.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ModalModule } from 'ngb-modal';
+import { PrincipalComponent } from './components/principal/principal.component';
+import { PrefinalComponent } from './components/prefinal/prefinal.component';
 
 @NgModule({
   // tslint:disable-next-line:max-line-length
@@ -28,6 +30,8 @@ import { ModalModule } from 'ngb-modal';
     UnidadAmarillaComponent,
     TiendaComponent,
     CuestionarioComponent,
+    PrincipalComponent,
+    PrefinalComponent,
   ],
   imports: [
     BrowserModule,
